@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p th:text="${test}"></p>
+<h5 th:text="${result}"></h5>
+<h5 th:text="${dto}"></h5>
+
+<script th:inline="javascript">
+    let msg = [[${result}]];
+    let dto = [[${dto}]];
+    console.log(dto.first, dto.last, dto.regTime, dto.sno);
+    let test = JSON.parse(`[[${dto}]]`)
+    console.log(test.sno, test.last);
+    console.log(test);
+</script>
+</body>
+</html>
