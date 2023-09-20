@@ -21,6 +21,7 @@ class Ex3ApplicationTests {
 		SampleDTO dto2 = dto.toBuilder().sno(2L)
 				.regTime(LocalDateTime.now()).build();
 		System.out.println(dto2);
+
 	}
 
 }
