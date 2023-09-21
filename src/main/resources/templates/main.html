@@ -12,9 +12,14 @@
     <p> Orange </p>
 </div>
 <script>
+    let box = document.querySelector("#box");
+    //console.log(box.innerHTML);
+    //console.log(box.textContent);
+    console.log(box.innerText);
+
     const fruits = document.querySelectorAll(".fruits p");
     const fruitArray = Array.from(fruits);
-    console.log(fruitArray);
+    // console.log(fruitArray);
     const fruitNames = fruitArray.map( fruit => fruit.textContent);
     console.log(fruitNames);
 </script>
